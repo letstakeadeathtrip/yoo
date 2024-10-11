@@ -1,0 +1,315 @@
+getgenv().Atlas = {
+    ['Script'] = {
+        ['Show Client Stats'] = false, -- only pops up for mobile
+        ['UI'] = {
+            ['Enabled'] = true,
+            ['UI Type'] = "Linoria" -- "Linoria = PC" mobile one soon
+        },
+        ['Auto Set'] = {
+            ['Enabled'] = true,-- this must be enabled to use them
+            ['Get Up'] = true,
+            ['Disable Seats'] = false,
+        },
+    },
+    ['Aimbot'] = {
+        ['Enabled'] = false,
+        ['Keybind'] = "c",
+        ['Prediction'] = 0.1672718,
+        ['Smoothing'] = 0.4,
+        ['HitPart'] = "HumanoidRootPart",
+        ['HitPart Type'] = "Normal", -- "Normal", "Closest Part"
+        ['Notify'] = false,
+        ['Use Airshot'] = {
+            ['Enabled'] = false,
+            ['AirPart'] = "LowerTorso",
+        },
+        ['Shake'] = {
+            ['Enabled'] = false,
+            ['X'] = 4,
+            ['Y'] = 2,
+            ['Z'] = 2,
+        },
+    },
+    ['Silent Aim'] = {
+        ['Enabled'] = false,
+        ['HitPart'] = "Head",
+        ['HitPart Type'] = "Normal", -- "Normal"
+        ['Prediction'] = 0.1243,
+        ['Use Hitchance'] = false, 
+        ['Hit Chance'] = 165, 
+        ['Use Airshot'] = {
+            ['Enabled'] = true,
+            ['AirPart'] = "LowerTorso",
+        },
+        ['FOV'] = {
+            ['Visible'] = false,
+            ['Thickness'] = 1,
+            ['Radius'] = 120,
+            ['Transparency'] = 1,
+            ['Color'] = Color3.fromRGB(255,255,255),
+            ['Position'] = "Middle", -- "Middle", "Cursor", "Follow Target"
+        },
+    },
+    ['Target Aimbot'] = {
+        ['Enabled'] = false,
+        ['Keybind'] = "c",
+        ['Prediction'] = 0.142291,
+        ['HitPart'] = "HumanoidRootPart",
+        ['View'] = false,
+        ['Notify'] = true,
+        ['Dot'] = {
+            ['Enabled'] = true,
+            ['Color'] = Color3.fromRGB(255,255,255),
+            ['Size'] = 5,
+        },
+        ['Highlight'] = {
+            ['Enabled'] = false,
+            ['Fill Color'] = Color3.fromRGB(255,0,41),
+            ['Outline Color'] = Color3.fromRGB(255,255,255),
+        },
+        ['Use Airshot'] = {
+            ['Enabled'] = false,
+            ['AirPart'] = "LowerTorso",
+        },
+        ['Target UI'] = {
+            ['Enabled'] = true,
+            ['Position'] = "Default", -- "Default", "Follow Target", "Cursor"
+            ['Rainbow'] = false,
+            ['Color'] = Color3.fromRGB(73,0,255),
+        },
+        ['Target Strafe'] = {
+            ['Enabled'] = false,
+            ['Auto Shoot On Strafe'] = true,
+            ['Distance'] = 8,
+            ['Speed'] = 10,
+            ['Height'] = 3,
+            ['Mode'] = "Strafe",
+            ['Randomize Maximum'] = 17,
+            ['Randomize Minimum'] = 2,
+            ['C-Sync'] = { -- doesnt work properly on solara 
+                ['Enabled'] = false,
+                ['Keybind'] = "",
+                ['Type'] = "Random (On Target)", -- "Random (On Target)" or "Random" or "Under Ground (On Target)"
+                ['Visualize Dummy'] = false,
+                ['Random Distance'] = 10, -- both "Random" and "Random (On Target)"
+                ['Auto Shoot On C-Sync'] = false,
+                ['Notify'] = false,
+            },
+        },
+    },
+    ['Global'] = {
+        ['Enabled'] = false, -- enable this first
+        ['Auto Prediction'] = false,
+        ['Mode'] = "Normal", -- Normal, High
+        ['Stats'] = false,
+    },
+    ['Networking'] = {
+        ['Resolver'] = {
+            ['Enabled'] = false,
+            ['Keybind'] = "",
+            ['Notify'] = true,
+            ['Method'] = "Move Direction", -- "Move Direction", "Delta" or "Recalculate" or "Move Direction (With Delay)"
+            ['Move Direction Delay'] = 24, -- only use if Method is "Move Direction (With Delay)"
+        },
+    },
+    ['Checks'] = {
+        ['Visible Check'] = false, 
+        ['KO Check'] = false, 
+        ['Crew Check'] = false, 
+        ['Friend Check'] = false, 
+        ['Unlock On Self Death'] = false, 
+    },
+    ['Animations'] = {
+        ['Enabled'] = false,
+        ['Greet'] = {
+            ['Enabled'] = false,
+            ['Keybind'] = "",
+        },
+        ['Lay'] = {
+            ['Enabled'] = false,
+            ['Keybind'] = "",
+        },
+        ['Lean'] = {
+            ['Enabled'] = false,
+            ['Keybind'] = "",
+        },
+        ['Praying'] = {
+            ['Enabled'] = false,
+            ['Keybind'] = "",
+        },
+    },
+    ['Gun Sorting'] = {
+        ['Enabled'] = false,
+        ['Keybind'] = "b", 
+        ['Delete Extra'] = true, 
+        ['Slots'] = { 
+            "[Double-Barrel SG]",
+            "[Revolver]",
+            "[TacticalShotgun]",
+            "[Knife]",
+        }
+    },
+    ['World'] = {
+        ['Enabled'] = false,
+        ['Textures'] = { -- turning on ingame low gfx will remove the material and only leave the color
+            ['Enabled'] = false,
+            ['Material'] = "Brick",
+            ['Color'] = Color3.fromRGB(111,13,255),
+            ['Random Color'] = true,
+        },
+        ['Fog'] = {
+            ['Enabled'] = false,
+            ['Color'] = Color3.fromRGB(111,13,255),
+            ['Start'] = 22,
+            ['End'] = 1000,
+        },
+        ['Ambient'] = {
+            ['Enabled'] = false,
+            ['Color'] = Color3.fromRGB(111,13,255),
+        },
+        ['Brightness'] = {
+            ['Enabled'] = false,
+            ['Amount'] = 2,
+        },
+        ['Clock Time'] = {
+            ['Enabled'] = false,
+            ['Amount'] = 6,
+        },
+        ['World Exposure'] = {
+            ['Enabled'] = false,
+            ['Amount'] = 0,
+        },
+    },
+    ['Misc'] = {
+        ['Memory Spoof'] = {
+            ['Enabled'] = false, -- only enable if u have ur performance stats on
+            ['Minimum Memory'] = 800,
+            ['Maximum Memory'] = 900,
+        },
+        ['Ping Spoof'] = {
+            ['Enabled'] = false, -- only enable if u have ur performance stats on
+            ['Spoof To'] = 30, -- do after 30 do .00 ms or .14 ms so it makes it look legit
+        },
+        ['Hit'] = {
+            ['Enabled'] = false,
+            ['Hit Sounds'] = false,
+            ['Logs'] = false,
+            ['Sound'] = "Skeet",
+            ['Volume'] = 100,
+            ['Hit Chams'] = {
+                ['Enabled'] = false,
+                ['Time'] = 0.45,
+                ['Material'] = "Neon",
+                ['Color'] = Color3.fromRGB(105, 95, 245),
+                ['Transparency'] = 0,
+            },
+        },
+        ['Fly'] = {
+            ['Enabled'] = false,
+            ['Speed'] = 600,
+            ['Keybind'] = "",
+        },
+        ['Movement Speed'] = {
+            ['Enabled'] = false,
+            ['Speed'] = 3,
+            ['Keybind'] = "",
+            ['Type'] = "CFrame",
+        },
+        ['Anti Lock'] = {
+            ['Enabled'] = false,
+            ['Show Velocity'] = false,
+            ['Show Visualization'] = {
+                ['Enabled'] = false,
+                ['Type'] = "Line",
+            },
+            ['Notify'] = true,
+            ['Keybind'] = "",
+            ['Type'] = "Sky", -- "Sky", "Random", "Underground" "Custom", "Break Velocity", "Velocity Mutiplier"
+            ['Offset'] = {
+                ['X'] = 10,
+                ['Y'] = 96,
+                ['Z'] = 14,
+            },
+            ['Multiplier'] = {
+                ['Power'] = 100,
+            },
+        },
+        ['Auto Reload'] = true,
+        ['Auto Stomp'] = true,
+        ['Anti Slow'] = true,
+        ['No Jumpcool Down'] = true,
+        ['ESP'] = {
+            ['Enabled'] = false, 
+            ['Names'] = { 
+                ['Enabled'] = false,
+                ['Color'] = Color3.fromRGB(255, 255, 255),
+                ['Size'] = 15,
+                ['Names Type'] = "DisplayName"
+            },
+            ['Box'] = { 
+                ['Enabled'] = false,
+                ['Color'] = Color3.fromRGB(255, 255, 255)
+            },
+            ['Health Bar'] = { 
+                ['Enabled'] = false,
+                ['Color'] = Color3.fromRGB(0, 255, 0)
+            },
+            ['Armor Bar'] = { 
+                ['Enabled'] = false,
+                ['Color'] = Color3.fromRGB(106, 167, 255)
+            },
+            ['Distance'] = { 
+                ['Enabled'] = false,
+                ['Color'] = Color3.fromRGB(255, 255, 255)
+            },
+            ['Tracers'] = {
+                ['Enabled'] = false,
+                ['Unlock Tracers'] = false,
+                ['Color'] = Color3.fromRGB(255, 255, 255)
+            },
+            ['Tool'] = {
+                ['Enabled'] = false,
+                ['Size'] = 6,
+                ['Font'] = 3,
+                ['Color'] = Color3.fromRGB(255, 255, 255),
+                ['Position'] = "HumanoidRootPart"
+            },
+        },
+        ['Cone Hat'] = {
+            ['Enabled'] = false,
+            ['Hat Visibility'] = .35,
+            ['Circle Visibility'] = 1,
+            ['Height'] = .75,
+            ['Radius'] = 1,
+            ['Sides'] = 25,
+            ['Rainbow'] = false,
+            ['Color'] = Color3.fromRGB(255, 255, 255),
+            ['Offset'] = Vector3.new(0, .75, 0),
+        },
+    },
+    ['Crosshair'] = {
+        ['Enabled'] = false,
+        ['Color'] = Color3.fromRGB(111,13,255),
+        ['Position'] = "Mouse", -- Mouse and Middle
+        ['Width'] = 1,
+        ['Length'] = 1,
+        ['Radius'] = 20,
+        ['Spinning'] = {
+            ['Enabled'] = false,
+            ['Speed'] = 100,
+            ['Speed Presets'] = "High", -- Low Medium High
+        },
+        ['Resize'] = {
+            ['Enabled'] = true,
+            ['Speed'] = 100,
+            ['Speed Presets'] = "High", -- Low Medium High
+        },
+    },
+    ['Macro'] = {
+        ['Enabled'] = false,
+        ['Keybind'] = "q",
+        ['Macro Type'] = "Mouse",
+        ['Delay'] = 0.01,
+    },
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DetainedMonkey2891/Atlas/refs/heads/main/Atlas"))()
